@@ -1,0 +1,217 @@
+.container-pages {
+  min-height: 100vh;
+  background-color: white;
+  position: relative;
+}
+
+.navbar {
+  padding: 36px 120px 36px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .section-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.navbar .section-menu a {
+  cursor: pointer;
+}
+
+.section-about-us {
+  background: #F1F1F1;
+  padding: 48px 80px;
+}
+
+.card-about-us {
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+  align-items: center;
+}
+
+.card-about-us img {
+  width: 50%;
+  height: 374px;
+}
+
+.section-get-yr-member {
+  padding: 142px 120px;
+}
+
+.section-get-yr-member .sct-item {
+  margin-top: 47px;
+  border-radius: 20px;
+  background: rgba(243, 243, 243, 0.60);
+  display: flex;
+  gap: 6rem;
+  padding: 44px 53px;
+  justify-content: center;
+}
+
+
+.section-get-yr-member .sct-item .cntr-item .sct-top {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+}
+
+.section-choose-country {
+  padding: 57px 122px;
+}
+
+.section-choose-country .sct-list-cntry,
+.cntnr-list-esy-book {
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.section-choose-country .sct-list-cntry .card-item {
+  margin-bottom: 20px;
+  width: 100%;
+  /* height: 400px; */
+}
+
+.section-want-travel {
+  margin-top: 80px;
+  margin-bottom: 200px;
+}
+
+.section-want-travel .list-travel-choice {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 1rem;
+}
+
+.section-want-travel .list-travel-choice .wrap-tvl-ch {
+  border-radius: 20px;
+  background: #FFF;
+  margin: 40px;
+  width: 80%;
+  /* drop shadow */
+  box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.40);
+
+}
+
+.section-want-travel .list-travel-choice .wrap-tvl-ch img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  /* height: 300px; */
+  width: 100%;
+  object-fit: contain;
+}
+
+.list-travel-choice::-webkit-scrollbar{
+  display: none;
+}
+
+.city-bg {
+  background: url('../assets/city-bg.png');
+  background-size: 100vw, contain;
+  background-repeat: no-repeat;
+  height: 578px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.city-bg .second-cvr {
+  background-color: rgba(255, 255, 255, 0.53);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-easy-to-book {
+  padding-top: 227px;
+  padding-left: 177px;
+  padding-right: 177px;
+  padding-bottom: 227px;
+}
+
+.cntnr-list-esy-book .card-type-item {
+  border-radius: 5px;
+  border: 2px solid var(--green-5, #F2FAF6);
+  background: var(--bw-white, #FFF);
+  box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.15);
+  padding: 36px 41px;
+}
+
+.cntnr-list-esy-book .card-type-item.hover-active {
+  background: var(--green-5, #F2FAF6);
+}
+
+.section-easy-to-book .container-msg {
+  margin-top: 40px;
+  border-radius: 1px;
+  padding: 15px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--green-5, #F2FAF6);
+  background: var(--bw-white, #FFF);
+  box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+.container-swiper {
+  height: 60vh;
+  position: relative;
+  width: 99vw;
+  overflow: hidden;
+}
+
+.swiper-container {
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.swiper-content {
+  display: flex;
+  width: fit-content;
+  position: absolute;
+  animation: swipeAnimation 20s linear infinite;
+}
+
+.swiper-item {
+  /* flex: 0 0 300px; */
+  height: 450px;
+  width: 40vw;
+  padding: 20px;
+  /* box-sizing: border-box;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd; */
+}
+
+@keyframes swipeAnimation {
+  0% {
+    left: 100vw;
+  }
+
+  100% {
+    left: -300px;
+  }
+}
+
+.experice-wrap {
+  margin-left: 120px;
+  margin-top: 10%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #FFF 18.82%, rgba(255, 255, 255, 0.66) 100%);
+  box-shadow: 0px 4px 72px 0px rgba(0, 0, 0, 0.20);
+  padding: 51px 112px 51px 45px;
+}
